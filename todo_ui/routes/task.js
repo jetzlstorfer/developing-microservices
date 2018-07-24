@@ -3,25 +3,7 @@ var router = express.Router();
 var request = require('request');
 
 var TODO_TASK_SVC = process.env.TODO_TASK_SVC;
-
-router.get('/dashboard', function(req, res, next) {
-  if (!req.session.user_signed_in == true) {
-    res.redirect('/user/signin')
-    return;  
-  }
-    url =  TODO_TASK_SVC + "/list_tasks?task_user_id=" + req.session.user_id;
-
-  request({
-    url: url,
-    json: true
-  },
-  function (error, response, body) {
-    if (!error && response.statusCode === 200) {
-      res.render('task', { title: 'Todo', values: body });
-      return;
-    }
-  })
-});
+var TODO_USER_SVC = process.env.TODO_USER_SVC;
 
 router.post('/add_task', function(req, res, next) {
   if (!req.session.user_signed_in == true) {
@@ -32,7 +14,7 @@ router.post('/add_task', function(req, res, next) {
   task_name = req.body.task_name;
 
   if (task_name == undefined || task_name == "undefined" || task_name == "") {
-    res.redirect('/task/dashboard');
+    res.redirect('/dashboard');
     return;
   }
 
@@ -43,7 +25,7 @@ router.post('/add_task', function(req, res, next) {
     json: true
   },
   function (error, response, body) {
-    res.redirect('/task/dashboard');
+    res.redirect('/dashboard');
   })
 });
 
@@ -62,7 +44,7 @@ router.post('/delete_task', function(req, res, next) {
     json: true
   },
   function (error, response, body) {
-    res.redirect('/task/dashboard');
+    res.redirect('/dashboard');
   })
 });
 

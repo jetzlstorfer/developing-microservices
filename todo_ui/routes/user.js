@@ -3,15 +3,7 @@ var router = express.Router();
 var request = require('request');
 
 var TODO_USER_SVC = process.env.TODO_USER_SVC;
-
-router.get('/', function(req, res, next) {
-  if (!req.session.user_signed_in == true) {
-    res.redirect('/user/signin')
-    return;  
-  }
-  
-  return;
-});
+var TODO_TASK_SVC = process.env.TODO_TASK_SVC;
 
 router.get('/register', function(req, res, next) {
   res.render('register', { title: 'Todo' });
