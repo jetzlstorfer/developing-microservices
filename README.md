@@ -10,15 +10,17 @@ This is a Todo microservice application on Kubernetes.
 
 <br>
 
-Checkout repositories:
+# Usage
+
+### Download
+
+Clone repositories:
 
 ```
 git clone https://github.com/dynatrace-innovationlab/developing-microservices.git
 ```
 
 <br>
-
-# Usage
 
 ### Deploy
 
