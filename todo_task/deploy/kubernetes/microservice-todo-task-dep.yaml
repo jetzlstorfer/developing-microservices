@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: todo-task-dep
+ labels:
+   app: todo-task
+ namespace: todo
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: todo-task
+ template:
+   metadata:
+     labels:
+       app: todo-task
+   spec:
+     containers:
+     - image: eu.gcr.io/sai-research/microservice-todo-task:latest
+       name: todo-task
+       ports:
+       - containerPort: 8080
+       env:
+       - name: TODO_TASK_DB_SVC
+         value: "mongodb://todo-task-db-svc:27017"
