@@ -40,20 +40,26 @@ kubectl get deployments,pods,services -n todo
 ```
 
 ```
-NAME                   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
-deploy/todo-task-db    1         1         1            1           56m
-deploy/todo-task-dep   1         1         1            1           55m
-deploy/todo-ui-dep     1         1         1            1           55m
+NAME                      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+deploy/todo-task-db-dep   1         1         1            1           3m
+deploy/todo-task-dep      1         1         1            1           3m
+deploy/todo-ui-dep        1         1         1            1           3m
+deploy/todo-user-db-dep   1         1         1            1           3m
+deploy/todo-user-dep      1         1         1            1           3m
 
-NAME                                READY     STATUS    RESTARTS   AGE
-po/todo-task-db-587d964cb-5rr6r     1/1       Running   0          56m
-po/todo-task-dep-5849cbff9f-prjsp   1/1       Running   0          55m
-po/todo-ui-dep-86dfc9b5f5-r2pcz     1/1       Running   0          55m
+NAME                                   READY     STATUS    RESTARTS   AGE
+po/todo-task-db-dep-587d964cb-cpjd6    1/1       Running   0          3m
+po/todo-task-dep-5849cbff9f-hq94m      1/1       Running   0          3m
+po/todo-ui-dep-6df6c797bd-2c2rc        1/1       Running   0          3m
+po/todo-user-db-dep-799dd794f8-f94jc   1/1       Running   0          3m
+po/todo-user-dep-b86767b8f-fm7sx       1/1       Running   0          3m
 
-NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
-svc/todo-task-db-svc   ClusterIP      10.63.249.31   <none>          27017/TCP        56m
-svc/todo-task-svc      ClusterIP      10.63.251.36   <none>          8080/TCP         55m
-svc/todo-ui-svc        LoadBalancer   10.63.254.73   35.240.82.100   8080:30246/TCP   55m
+NAME                   TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+svc/todo-task-db-svc   ClusterIP      10.63.243.124   <none>          27017/TCP        3m
+svc/todo-task-svc      ClusterIP      10.63.245.42    <none>          8080/TCP         3m
+svc/todo-ui-svc        LoadBalancer   10.63.249.213   35.233.69.142   8080:32257/TCP   3m
+svc/todo-user-db-svc   ClusterIP      10.63.252.241   <none>          27017/TCP        3m
+svc/todo-user-svc      ClusterIP      10.63.249.235   <none>          8080/TCP         3m
 ```
 
 <br>
