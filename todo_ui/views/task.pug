@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  div(class="navbar navbar-dark bg-dark navbar-static-top")
+    a(class="navbar-brand", href="#") TodoApp
+    button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarNavDropdown", aria-controls="navbarNavDropdown", aria-expanded="false", aria-label="Toggle navigation")
+      span(class="navbar-toggler-icon")
+    div(class="collapse navbar-collapse", id="navbarNavDropdown")
+      ul(class="nav navbar-nav navbar-right")
+        li(class="dropdown")
+          a(href="/user/signout") Sign out
+  
+  div(class="wrapper")   
+    br
+    h4 Add Task
+
+    form(method='POST' action='/task/add_task')
+      input(type='hidden', name='task_user_id', value=`${task_user_id}`)
+      div(class="table-responsive")
+        table(class="table")
+          thead
+            th(width="20%") Task
+            th(width="70%")
+            th(width="10%")
+          tbody
+            tr
+              td
+                label(for='task_name') Name:
+              td
+                input#name.form-control(type='text', placeholder='Name', name='task_name', value='')
+              td
+                button.btn.btn-primary(type='submit', class='btn btn-large btn-block btn-primary') Create
+
+    br
+    h4 Task List
+
+    div(class="table-responsive")
+      table(class="table")
+        thead
+          th(width="90%") Task
+          th(width="10%") Delete
+        tbody
+          each val in values
+            - task_id = val['_id']['$oid']
+            - task_name = val['task_name']
+            tr
+              td
+                span= task_name
+              td
+                form(method='POST' action='/task/delete_task')
+                  input(type='hidden', name='task_id', value=`${task_id}`)
+                  button.btn.btn-primary(type='submit', class='btn btn-large btn-block btn-primary') Delete
+          else
+            tr
+              td
+                span There are no tasks.

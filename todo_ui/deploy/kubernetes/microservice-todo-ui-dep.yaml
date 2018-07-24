@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: todo-ui-dep
+ labels:
+   app: todo-ui
+ namespace: todo
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: todo-ui
+ template:
+   metadata:
+     labels:
+       app: todo-ui
+   spec:
+     containers:
+     - image: eu.gcr.io/sai-research/microservice-todo-ui:latest
+       name: todo-ui
+       ports:
+       - containerPort: 8080
+       env:
+       - name: TODO_TASK_SVC
+         value: "http://todo-task-svc:8080"
+       - name: TODO_USER_SVC
+         value: "http://todo-user-svc:8080"
