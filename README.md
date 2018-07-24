@@ -14,10 +14,7 @@ This is a Todo microservice application on Kubernetes.
 Checkout repositories:
 
 ```
-git clone https://github.com/sachsenhofer/microservice_todo.git
-git clone https://github.com/sachsenhofer/microservice_todo_task.git
-git clone https://github.com/sachsenhofer/microservice_todo_task_db.git
-git clone https://github.com/sachsenhofer/microservice_todo_ui.git
+git clone https://github.com/dynatrace-innovationlab/developing-microservices.git
 ```
 
 <br>
