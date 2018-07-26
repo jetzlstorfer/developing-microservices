@@ -10,6 +10,8 @@ Execute in terminal:
 kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent-operator/master/deploy/kubernetes.yaml
 ```
 
+<br>
+
 ### Step 2/4: Create secret
 
 Execute in terminal:
@@ -20,6 +22,8 @@ DYNATRACE_API_TOKEN=[DYNATRACE_API_TOKEN]
 
 kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${DYNATRACE_API_TOKEN}" --from-literal="paasToken=${PLATFORM_AS_A_SERVICE_TOKEN}"
 ```
+
+<br>
 
 ### Step 3/4: Create configuration 
 
@@ -42,6 +46,8 @@ spec:
   - APP_LOG_CONTENT_ACCESS=1
   env: []
 ```
+
+<br>
 
 ### Step 4/4: Create custom resource
 
