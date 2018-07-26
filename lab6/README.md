@@ -17,7 +17,9 @@ export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
 
 <br>
 
-### Step 2/5: Install 
+### Step 2/5: Install
+
+Reference: https://github.com/Dynatrace/dynatrace-oneagent-operator
 
 Execute in terminal:
 
