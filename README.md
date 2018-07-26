@@ -11,101 +11,37 @@ Information: dominik.sachsenhofer@dynatrace.com
 
 __Lab 1:__ Container and containerized apps
 
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab1
+
+<br>
+
 __Lab 2:__ Using a Container Registry
+
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab2
+
+<br>
 
 __Lab 3:__ Create a microservices application
 
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab3
+
+<br>
+
 __Lab 4:__ Setup a Kubernetes Cluster
+
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab4
+
+<br>
 
 __Lab 5:__ Deploy a microservices application on a Kubernetes Cluster
 
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab5
+
+<br>
+
 __Lab 6:__ Instrument a Kubernetes Cluster with Dynatrace
 
-<br>
-<br>
-
-# Lab 1: Container and containerized apps
-
-### Step 1/5: Create a Python Web application
-
-File: directory/app.py
-
-```
-from flask import Flask 
-app = Flask(__name__) 
-
-@app.route("/")
-def hello(): 
-   return "Hello World!"
-
-if __name__ == '__main__':
-   app.run(debug=False, host='0.0.0.0', port=8080)
-```
-
-### Step 2/5: Create a requirements.txt
-
-File: directory/requirements.txt
-
-```
-flask==0.10.1
-```
-
-### Step 3/5: Create a Dockerfile
-
-File: directory/Dockerfile
-
-```
-FROM ubuntu:latest 
-RUN apt-get update 
-RUN apt-get install -y python-pip python-dev build-essential wget curl
-COPY . /app 
-WORKDIR /app 
-RUN pip install -r requirements.txt 
-EXPOSE 8080 
-ENTRYPOINT ["python"] 
-CMD ["app.py"]
-```
-
-### Step 4/5: Build the Docker container
-
-```
-sudo docker build -t sai-research/hello-world:latest .
-```
-
-### Step 5/5: Run the Docker container
-
-```
-sudo docker run -p 8080:8080 sai-research/hello-world:latest
-```
-
-<br>
-<br>
-
-# Lab 2: Using a Container Registry
-
-### Step 1/4: Build the image
-
-```
-sudo docker build -t sai-research/hello-world:latest .
-```
-
-### Step 2/4: Tag the image
-
-```
-sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-world:latest 
-```
-
-### Step 3/4: Push the image to the Container Registry
-
-```
-sudo docker push eu.gcr.io/sai-research/hello-world:latest
-```
-
-### Step 4/4: Pull the image from the Container Registry
-
-```
-sudo docker pull eu.gcr.io/sai-research/hello-world:latest
-```
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab6
 
 <br>
 <br>

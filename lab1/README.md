@@ -1,12 +1,3 @@
-# developing-microservices
-
-This is the home of the Dynatrace Developing Microservices workshop.
-
-Information: dominik.sachsenhofer@dynatrace.com
-
-<br>
-<br>
-
 # Lab 1: Container and containerized apps
 
 ### Step 1/5: Create a Python Web application
