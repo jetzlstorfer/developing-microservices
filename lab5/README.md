@@ -12,12 +12,11 @@ Account: [EMAIL]
 Set environment variable:
 
 ```
-EMAIL=dominik.sachsenhofer@dynatrace.com
+export EMAIL=dominik.sachsenhofer@dynatrace.com
 ```
 
 Grant cluster-admin to your current identity:
 
 ```
-$ kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=cluster-admin --user=$EMAIL
-Clusterrolebinding "dynatrace-cluster-admin-binding" created
+kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=cluster-admin --user=${EMAIL}
 ```
