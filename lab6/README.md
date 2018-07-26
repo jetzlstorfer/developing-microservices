@@ -10,6 +10,10 @@ User: developing-microservices@dynatracelabs.com
 
 Password: developing-microservices@dynatracelabs.com+A0
 
+Create a DYNATRACE_API_TOKEN.
+
+Create a PLATFORM_AS_A_SERVICE_TOKEN.
+
 <br>
 
 ### Step 2/5: Install 
