@@ -19,7 +19,7 @@ Get current google identity:
 
 ```
 $ gcloud info | grep Account
-Account: [EMAIL]
+Account: [dominik.sachsenhofer@dynatrace.com]
 ```
 
 Set environment variable:
