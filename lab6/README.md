@@ -2,7 +2,9 @@
 
 <br>
 
-__Sprint Tenant:__
+### Step 1/5: Create Dynatrace Tenant 
+
+Type: Sprint Tenant
 
 User: developing-microservices@dynatracelabs.com
 
@@ -10,7 +12,7 @@ Password: developing-microservices@dynatracelabs.com+A0
 
 <br>
 
-### Step 1/4: Install 
+### Step 2/5: Install 
 
 Execute in terminal:
 
@@ -20,7 +22,7 @@ kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent
 
 <br>
 
-### Step 2/4: Create secret
+### Step 3/5: Create secret
 
 Execute in terminal:
 
@@ -33,7 +35,7 @@ kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${D
 
 <br>
 
-### Step 3/4: Create configuration 
+### Step 4/5: Create configuration 
 
 Creat cr.yaml file:
 
@@ -57,7 +59,7 @@ spec:
 
 <br>
 
-### Step 4/4: Create custom resource
+### Step 5/5: Create custom resource
 
 Execute in terminal:
 
