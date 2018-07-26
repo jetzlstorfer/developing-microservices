@@ -2,6 +2,14 @@
 
 <br>
 
+__Sprint Tenant:__
+
+User: developing-microservices@dynatracelabs.com
+
+Password: developing-microservices@dynatracelabs.com+A0
+
+<br>
+
 ### Step 1/4: Install 
 
 Execute in terminal:
