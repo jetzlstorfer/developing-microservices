@@ -68,13 +68,13 @@ CMD ["app.py"]
 ### Step 4/5: Build the Docker container
 
 ```
-docker build –t dynatrace-innovationlab/hello-world:latest .
+docker build –t sai-research/hello-world:latest .
 ```
 
 ### Step 5/5: Run the Docker container
 
 ```
-docker run –p 8080:8080 dynatrace-innovationlab/hello-world:latest
+docker run –p 8080:8080 sai-research/hello-world:latest
 ```
 
 <br>
@@ -82,7 +82,26 @@ docker run –p 8080:8080 dynatrace-innovationlab/hello-world:latest
 
 # Part 2: Using a Container Registry
 
+### Step 1/3: Build the image
 
+```
+sudo docker build -t sai-research/hello-world:latest .
+```
+
+### Step 2/3: Tag the image
+
+```
+sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-world:latest 
+```
+
+### Step 3/3: Push the image to the Container Registry
+
+```
+sudo docker push eu.gcr.io/sai-research/hello-world:latest
+```
+
+<br>
+<br>
 
 # Usage
 
