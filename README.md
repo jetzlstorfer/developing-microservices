@@ -1,4 +1,4 @@
-# developing-microservices
+# Developing Microservices
 
 This is the home of the Dynatrace Developing Microservices workshop.
 
