@@ -1,12 +1,3 @@
-# developing-microservices
-
-This is the home of the Dynatrace Developing Microservices workshop.
-
-Information: dominik.sachsenhofer@dynatrace.com
-
-<br>
-<br>
-
 # Lab 2: Using a Container Registry
 
 ### Step 1/4: Build the image
