@@ -61,3 +61,10 @@ sudo docker build -t sai-research/hello-world:latest .
 ```
 sudo docker run -p 8080:8080 sai-research/hello-world:latest
 ```
+
+<br>
+<br>
+
+__Next Lab:__
+
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab2
