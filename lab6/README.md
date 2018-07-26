@@ -51,7 +51,7 @@ metadata:
   name: oneagent
   namespace: dynatrace
 spec:
-  apiUrl: https://ENVIRONMENTID.live.dynatrace.com/api
+  apiUrl: https://qji38429.sprint.dynatrace.com/api
   skipCertCheck: false
   tokens: ""
   nodeSelector: {}
