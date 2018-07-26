@@ -80,7 +80,7 @@ docker run –p 8080:8080 sai-research/hello-world:latest
 <br>
 <br>
 
-# Part 2: Using a Container Registry
+# Lab 2: Using a Container Registry
 
 ### Step 1/3: Build the image
 
