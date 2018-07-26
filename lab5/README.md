@@ -1,6 +1,6 @@
 # Lab 5: Create a Kubernetes Cluster
 
-### Step 1/2: Create a Cluster on Google Kubernetes Engine
+### Step 1/2: Create a Cluster on Google Kubernetes Engine (GKE)
 
 https://console.cloud.google.com/kubernetes
 
