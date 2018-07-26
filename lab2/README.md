@@ -31,3 +31,10 @@ sudo docker push eu.gcr.io/sai-research/hello-world:latest
 ```
 sudo docker pull eu.gcr.io/sai-research/hello-world:latest
 ```
+
+<br>
+<br>
+
+__Next Lab:__
+
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab3
