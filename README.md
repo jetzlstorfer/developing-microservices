@@ -7,7 +7,19 @@ Information: dominik.sachsenhofer@dynatrace.com
 <br>
 <br>
 
-# Part 1: Container and containerized apps
+# Contents
+
+Lab 1: Container and containerized apps
+Lab 2: Using a Container Registry
+Lab 3: Create a microservices application
+Lab 4: Setup a Kubernetes Cluster
+Lab 5: Deploy a microservices application on a Kubernetes Cluster
+Lab 6: Instrument a Kubernetes Cluster with Dynatrace
+
+<br>
+<br>
+
+# Lab 1: Container and containerized apps
 
 ### Step 1/5: Create a Python Web application
 
