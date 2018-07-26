@@ -82,22 +82,28 @@ docker run –p 8080:8080 sai-research/hello-world:latest
 
 # Lab 2: Using a Container Registry
 
-### Step 1/3: Build the image
+### Step 1/4: Build the image
 
 ```
 sudo docker build -t sai-research/hello-world:latest .
 ```
 
-### Step 2/3: Tag the image
+### Step 2/4: Tag the image
 
 ```
 sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-world:latest 
 ```
 
-### Step 3/3: Push the image to the Container Registry
+### Step 3/4: Push the image to the Container Registry
 
 ```
 sudo docker push eu.gcr.io/sai-research/hello-world:latest
+```
+
+### Step 4/4: Pull the image from the Container Registry
+
+```
+sudo docker pull eu.gcr.io/sai-research/hello-world:latest
 ```
 
 <br>
