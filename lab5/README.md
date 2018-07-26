@@ -1,35 +1,75 @@
-# Lab 5: Create a Kubernetes Cluster
-
-### Step 1/2: Create a Cluster on Google Kubernetes Engine (GKE)
-
-https://console.cloud.google.com/kubernetes
-
-Configuration:
-- Name: cluster-1
-- Cluster Version: 1.10.5-gke.3
-- Machine type: 2vCPU (7.5 GB memory, n1-standard-2)
-- Node image: Ubuntu
-- Size: 3
+# Lab 6: Instrument a Kubernetes Cluster with Dynatrace
 
 <br>
 
-### Step 2/2: Create a cluster-admin-binding
+### Step 1/5: Create Dynatrace Tenant 
 
-Get current google identity:
+Type: Sprint Tenant
 
-```
-$ gcloud info | grep Account
-Account: [dominik.sachsenhofer@dynatrace.com]
-```
+User: developing-microservices@dynatracelabs.com
 
-Set environment variable:
+Password: developing-microservices@dynatracelabs.com+A0
 
 ```
-export EMAIL=dominik.sachsenhofer@dynatrace.com
+export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
+export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
 ```
 
-Grant cluster-admin to your current identity:
+<br>
+
+### Step 2/5: Install
+
+Reference: https://github.com/Dynatrace/dynatrace-oneagent-operator
+
+Execute in terminal:
 
 ```
-kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=cluster-admin --user=${EMAIL}
+kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent-operator/master/deploy/kubernetes.yaml
+```
+
+<br>
+
+### Step 3/5: Create secret
+
+Execute in terminal:
+
+```
+export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
+export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
+
+kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${DYNATRACE_API_TOKEN}" --from-literal="paasToken=${PLATFORM_AS_A_SERVICE_TOKEN}"
+```
+
+<br>
+
+### Step 4/5: Create configuration 
+
+Creat cr.yaml file:
+
+```
+apiVersion: dynatrace.com/v1alpha1
+kind: OneAgent
+metadata:
+  name: oneagent
+  namespace: dynatrace
+spec:
+  apiUrl: https://qji38429.sprint.dynatrace.com/api
+  skipCertCheck: false
+  tokens: ""
+  nodeSelector: {}
+  tolerations: []
+  image: ""
+  args:
+  - APP_LOG_CONTENT_ACCESS=1
+  env: []
+```
+
+<br>
+
+### Step 5/5: Create custom resource
+
+Execute in terminal:
+
+```
+kubectl create -f cr.yaml
 ```
