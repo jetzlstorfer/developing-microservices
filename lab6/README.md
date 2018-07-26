@@ -1,75 +1,51 @@
-# Lab 6: Instrument a Kubernetes Cluster with Dynatrace
+# Lab 6: Deploy a microservice application on a Kubernetes Cluster
 
 <br>
 
-### Step 1/5: Create Dynatrace Tenant 
-
-Type: Sprint Tenant
-
-User: developing-microservices@dynatracelabs.com
-
-Password: developing-microservices@dynatracelabs.com+A0
-
-```
-export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
-export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
-```
-
-<br>
-
-### Step 2/5: Install
-
-Reference: https://github.com/Dynatrace/dynatrace-oneagent-operator
+### Step 1/5: Deploy a microservice 
 
 Execute in terminal:
 
 ```
-kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent-operator/master/deploy/kubernetes.yaml
+TODO
 ```
 
 <br>
 
-### Step 3/5: Create secret
+### Step 2/5: Deploy a microservice 
 
 Execute in terminal:
 
 ```
-export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
-export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
-
-kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${DYNATRACE_API_TOKEN}" --from-literal="paasToken=${PLATFORM_AS_A_SERVICE_TOKEN}"
+TODO
 ```
 
 <br>
 
-### Step 4/5: Create configuration 
-
-Creat cr.yaml file:
-
-```
-apiVersion: dynatrace.com/v1alpha1
-kind: OneAgent
-metadata:
-  name: oneagent
-  namespace: dynatrace
-spec:
-  apiUrl: https://qji38429.sprint.dynatrace.com/api
-  skipCertCheck: false
-  tokens: ""
-  nodeSelector: {}
-  tolerations: []
-  image: ""
-  args:
-  - APP_LOG_CONTENT_ACCESS=1
-  env: []
-```
-
-<br>
-
-### Step 5/5: Create custom resource
+### Step 3/5: Deploy a microservice 
 
 Execute in terminal:
 
 ```
-kubectl create -f cr.yaml
+TODO
+```
+
+<br>
+
+### Step 4/5: Deploy a microservice 
+
+Execute in terminal:
+
+```
+TODO
+```
+
+<br>
+
+### Step 5/5: Deploy a microservice 
+
+Execute in terminal:
+
+```
+TODO
 ```
