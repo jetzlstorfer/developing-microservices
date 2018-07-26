@@ -12,6 +12,8 @@ Execute in terminal:
 sh deploy.sh
 ```
 
+<br>
+
 ### Step 2/3: Test
 
 Check all ressources that have been created:
