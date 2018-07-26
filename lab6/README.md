@@ -10,9 +10,10 @@ User: developing-microservices@dynatracelabs.com
 
 Password: developing-microservices@dynatracelabs.com+A0
 
-Create a DYNATRACE_API_TOKEN.
-
-Create a PLATFORM_AS_A_SERVICE_TOKEN.
+```
+export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
+export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
+```
 
 <br>
 
@@ -31,8 +32,8 @@ kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent
 Execute in terminal:
 
 ```
-export PLATFORM_AS_A_SERVICE_TOKEN=[PLATFORM_AS_A_SERVICE_TOKEN]
-export DYNATRACE_API_TOKEN=[DYNATRACE_API_TOKEN]
+export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
+export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
 
 kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${DYNATRACE_API_TOKEN}" --from-literal="paasToken=${PLATFORM_AS_A_SERVICE_TOKEN}"
 ```
