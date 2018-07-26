@@ -12,7 +12,7 @@ Execute in terminal:
 sh deploy.sh
 ```
 
-<br>
+### Step 2/3: Test
 
 Check all ressources that have been created:
 
@@ -43,9 +43,7 @@ svc/todo-user-db-svc   ClusterIP      10.63.252.241   <none>          27017/TCP 
 svc/todo-user-svc      ClusterIP      10.63.249.235   <none>          8080/TCP         3m
 ```
 
-### Step 2/3: Test
-
-To test, go to http://35.233.69.142:8080 in your browser.
+Then go to http://35.233.69.142:8080 in your browser.
 
 ### Step 3/3: Delete
 
