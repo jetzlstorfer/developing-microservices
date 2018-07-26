@@ -1,5 +1,7 @@
 # Lab 1: Container and containerized apps
 
+<br>
+
 ### Step 1/5: Create a Python Web application
 
 File: directory/app.py
@@ -16,6 +18,8 @@ if __name__ == '__main__':
    app.run(debug=False, host='0.0.0.0', port=8080)
 ```
 
+<br>
+
 ### Step 2/5: Create a requirements.txt
 
 File: directory/requirements.txt
@@ -23,6 +27,8 @@ File: directory/requirements.txt
 ```
 flask==0.10.1
 ```
+
+<br>
 
 ### Step 3/5: Create a Dockerfile
 
@@ -40,11 +46,15 @@ ENTRYPOINT ["python"]
 CMD ["app.py"]
 ```
 
+<br>
+
 ### Step 4/5: Build the Docker container
 
 ```
 sudo docker build -t sai-research/hello-world:latest .
 ```
+
+<br>
 
 ### Step 5/5: Run the Docker container
 
