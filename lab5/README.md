@@ -1,4 +1,4 @@
-# Lab 6: Instrument a Kubernetes Cluster with Dynatrace
+# Lab 5: Instrument a Kubernetes Cluster with Dynatrace
 
 <br>
 
