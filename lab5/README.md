@@ -1,6 +1,19 @@
 # Lab 5: Create a Kubernetes Cluster
 
-### Step 1/5: Create a cluster-admin-binding
+### Step 1/2: Create a Cluster on Google Kubernetes Engine
+
+https://console.cloud.google.com/kubernetes
+
+Configuration:
+- Name: cluster-1
+- Cluster Version: 1.10.5-gke.3
+- Machine type: 2vCPU (7.5 GB memory, n1-standard-2)
+- Node image: Ubuntu
+- Size: 3
+
+<br>
+
+### Step 2/2: Create a cluster-admin-binding
 
 Get current google identity:
 
