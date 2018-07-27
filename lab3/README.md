@@ -2,7 +2,7 @@
 
 <br>
 
-### Step 1/5: Create a Python Web application
+### Step 1/5: Define the application/services
 
 File: directory/app.py
 

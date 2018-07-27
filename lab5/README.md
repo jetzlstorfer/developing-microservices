@@ -6,6 +6,8 @@
 
 Type: Sprint Tenant
 
+Url: https://qji38429.sprint.dynatracelabs.com
+
 User: developing-microservices@dynatracelabs.com
 
 Password: developing-microservices@dynatracelabs.com+A0
