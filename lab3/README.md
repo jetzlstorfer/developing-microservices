@@ -6,7 +6,12 @@
 
 ![img](https://github.com/dynatrace-innovationlab/developing-microservices/blob/master/assets/img1.png)
 
+<br>
+
 ### Step 2/5: Define the application
+
+![img](https://github.com/dynatrace-innovationlab/developing-microservices/blob/master/assets/img2.png)
+
 
 
 <br>
