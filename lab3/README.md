@@ -2,12 +2,21 @@
 
 <br>
 
-### Step 1/5: Define the application
+### Step 1/3: Define the application
 
 ![img](https://github.com/dynatrace-innovationlab/developing-microservices/blob/master/assets/img1.png)
 
-### Step 2/5: Define the application
+<br>
 
+### Step 2/3: Define the microservices/architecture
+
+![img](https://github.com/dynatrace-innovationlab/developing-microservices/blob/master/assets/img2.png)
+
+<br>
+
+### Step 3/3: Development
+
+(Go through code in Visual Studio Code)
 
 <br>
 <br>
