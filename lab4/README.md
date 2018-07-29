@@ -2,7 +2,7 @@
 
 ### Step 1/8: Create a project
 
-https://console.cloud.google.com/
+https://console.cloud.google.com
 
 Create a Google Cloud project.
 
