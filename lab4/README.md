@@ -2,6 +2,8 @@
 
 ### Step 1/2: Create a Cluster on Google Kubernetes Engine (GKE)
 
+IMPORTANT: Billing must be enabled in order to use Google Kubernetes Engine.
+
 https://console.cloud.google.com/kubernetes
 
 Configuration:
