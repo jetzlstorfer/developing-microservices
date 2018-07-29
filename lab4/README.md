@@ -1,8 +1,12 @@
 # Lab 4: Create a Kubernetes Cluster
 
-### Step 1/2: Create a Cluster on Google Kubernetes Engine (GKE)
+### Step 1/8: Create a project
 
-IMPORTANT: Billing must be enabled in order to use Google Kubernetes Engine.
+Create a project.
+
+<br>
+
+### Step 2/8: Create a Cluster on Google Kubernetes Engine (GKE)
 
 https://console.cloud.google.com/kubernetes
 
@@ -13,9 +17,43 @@ Configuration:
 - Node image: Ubuntu
 - Size: 3
 
+IMPORTANT: Billing must be enabled in order to use Google Kubernetes Engine.
+
 <br>
 
-### Step 2/2: Create a cluster-admin-binding
+### Step 3/8: Initialize gcloud
+
+Execute in terminal:
+
+```
+gcloud initialize
+```
+
+<br>
+
+### Step 4/8: Set environment variables
+
+Execute in terminal:
+
+```
+export CLUSTER_NAME=cluster-1
+export CLUSTER_ZONE=europe-west1-b
+export PROJECT=sai-research
+```
+
+<br>
+
+### Step 5/8: Connect to cluster
+
+Execute in terminal:
+
+```
+gcloud container clusters get-credentials ${CLUSTER_NAME} --zone ${CLUSTER_ZONE} --project ${PROJECT}
+```
+
+<br>
+
+### Step 6/8: Create a cluster-admin-binding
 
 Get current google identity:
 
@@ -34,6 +72,33 @@ Grant cluster-admin to your current identity:
 
 ```
 kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=cluster-admin --user=${EMAIL}
+```
+
+<br>
+
+### Step 7/8: Verify cluster
+
+Execute in terminal:
+
+```
+$ kubectl cluster-info
+Kubernetes master is running at https://35.240.20.43
+GLBCDefaultBackend is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/default-http-backend:http/proxy
+Heapster is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/heapster/proxy
+KubeDNS is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+Metrics-server is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```
+
+<br>
+
+### Step 8/8: Get resources
+
+Execute in terminal:
+
+```
+kubectl get deployments,pods,services --all-namespaces
 ```
 
 <br>
