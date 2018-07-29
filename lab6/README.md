@@ -2,7 +2,7 @@
 
 <br>
 
-### Step 1/3: Deploy a microservice 
+### Step 1/3: Deploy all microservices
 
 Deploys the application to the Kubernetes cluster.
 
