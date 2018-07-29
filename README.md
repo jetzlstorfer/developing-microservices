@@ -33,13 +33,13 @@ https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/
 
 <br>
 
-__Lab 5:__ Instrument a Kubernetes Cluster with Dynatrace
+__Lab 5:__ Deploy a microservices application on a Kubernetes Cluster
 
 https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab5
 
 <br>
 
-__Lab 6:__ Deploy a microservices application on a Kubernetes Cluster
+__Lab 6:__ Instrument a Kubernetes Cluster with Dynatrace
 
 https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab6
 
