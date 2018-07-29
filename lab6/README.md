@@ -1,4 +1,4 @@
-# Lab 6: Deploy a microservice application on a Kubernetes Cluster
+# Lab 5: Deploy a microservice application on a Kubernetes Cluster
 
 <br>
 
