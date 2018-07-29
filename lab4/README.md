@@ -23,19 +23,25 @@ IMPORTANT: Billing must be enabled in order to use Google Kubernetes Engine.
 
 <br>
 
-### Step 3/8: Initialize gcloud
+### Step 3/8: Prepare gcloud
 
 Execute in terminal:
 
 ```
-gcloud initialize
+gcloud auth
+```
+
+Execute in terminal:
+
+```
+gcloud init
 ```
 
 <br>
 
-### Step 4/8: Set environment variables
+### Step 4/8: Connect to cluster
 
-Execute in terminal:
+Set environment variables:
 
 ```
 export CLUSTER_NAME=cluster-1
@@ -43,14 +49,27 @@ export CLUSTER_ZONE=europe-west1-b
 export PROJECT=sai-research
 ```
 
-<br>
-
-### Step 5/8: Connect to cluster
-
 Execute in terminal:
 
 ```
 gcloud container clusters get-credentials ${CLUSTER_NAME} --zone ${CLUSTER_ZONE} --project ${PROJECT}
+```
+
+<br>
+
+### Step 5/8: Verify cluster connection
+
+Execute in terminal:
+
+```
+$ kubectl cluster-info
+Kubernetes master is running at https://35.240.20.43
+GLBCDefaultBackend is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/default-http-backend:http/proxy
+Heapster is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/heapster/proxy
+KubeDNS is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+Metrics-server is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 
 <br>
@@ -78,29 +97,23 @@ kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=
 
 <br>
 
-### Step 7/8: Verify cluster
-
-Execute in terminal:
-
-```
-$ kubectl cluster-info
-Kubernetes master is running at https://35.240.20.43
-GLBCDefaultBackend is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/default-http-backend:http/proxy
-Heapster is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/heapster/proxy
-KubeDNS is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
-Metrics-server is running at https://35.240.20.43/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
-
-To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
-```
-
-<br>
-
-### Step 8/8: Get resources
+### Step 7/8: Get resources
 
 Execute in terminal:
 
 ```
 kubectl get deployments,pods,services --all-namespaces
+```
+
+<br>
+
+### Step 8/8: Run container/images
+
+Execute in terminal:
+
+```
+kubectl run hello-world --image=eu.gcr.io/sai-research/hello-world:latest --port=8080 --replicas=3
+kubectl expose deployment/hello-world --type="LoadBalancer" --port 8080
 ```
 
 <br>
