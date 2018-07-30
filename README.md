@@ -7,6 +7,19 @@ Information: dominik.sachsenhofer@dynatrace.com
 <br>
 <br>
 
+# Requirements
+
+Cloud Accounts:
+- Google Cloud Platform
+
+Tools:
+- gcloud
+- kubectl 
+- python3 (optional)
+- node (optional)
+
+<br>
+
 # Contents
 
 __Lab 1:__ Container and containerized apps
