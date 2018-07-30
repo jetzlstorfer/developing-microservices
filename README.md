@@ -13,6 +13,7 @@ Cloud Accounts:
 - Google Cloud Platform
 
 Tools:
+- git
 - gcloud
 - kubectl 
 - python3 (optional)
