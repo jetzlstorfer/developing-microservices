@@ -46,7 +46,7 @@ kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${D
 
 ### Step 4/5: Create configuration 
 
-Creat cr.yaml file:
+Create cr.yaml file:
 
 ```
 apiVersion: dynatrace.com/v1alpha1
