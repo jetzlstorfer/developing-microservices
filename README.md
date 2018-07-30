@@ -16,7 +16,9 @@ Tools:
 - gcloud
 - kubectl 
 - python3 (optional)
+- pip (optional)
 - node (optional)
+- npm (optional)
 
 <br>
 
