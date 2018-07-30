@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  div(class="navbar navbar-dark bg-dark navbar-static-top")
+    a(class="navbar-brand", href="#") TodoApp
+    button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarNavDropdown", aria-controls="navbarNavDropdown", aria-expanded="false", aria-label="Toggle navigation")
+      span(class="navbar-toggler-icon")
+    div(class="collapse navbar-collapse", id="navbarNavDropdown")
+
+  div(class="wrapper")
+    br
+    h4 Register
+
+    form(method='POST' action='/user/register')
+      div(class="table-responsive")
+        table(class="table")
+          thead
+            th(width="100%")
+          tbody
+            tr
+              td
+                input#name.form-control(type='text', placeholder='Name', name='user_name', value='')
+            tr
+              td
+                input#name.form-control(type='password', placeholder='Password', name='user_password', value='')
+            tr
+              td
+                button.btn.btn-primary(type='submit', class='btn btn-large btn-block btn-primary') Register
+
+    br
+    div
+      a(href="/user/signin") Click here to sign in.

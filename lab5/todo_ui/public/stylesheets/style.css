@@ -1,0 +1,40 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.wrapper {
+  padding: 50px !important;
+}
+
+.right {
+  float: right !important;
+}
+
+a {
+  color: #000 !important;
+}
+
+.dropdown a {
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color:#343a40 !important;
+  border: 1px solid #343a40 !important;
+}
+
+.navbar {
+  padding: .5rem 3rem !important;
+}
+
+.navbar-brand img {
+  width: 100px !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}

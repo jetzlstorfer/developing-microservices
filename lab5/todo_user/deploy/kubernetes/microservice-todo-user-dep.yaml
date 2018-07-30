@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: todo-user-dep
+ labels:
+   app: todo-user
+ namespace: todo
+spec:
+ replicas: 1
+ selector:
+   matchLabels:
+     app: todo-user
+ template:
+   metadata:
+     labels:
+       app: todo-user
+   spec:
+     containers:
+     - image: eu.gcr.io/sai-research/microservice-todo-user:latest
+       name: todo-user
+       ports:
+       - containerPort: 8080
+       env:
+       - name: TODO_USER_DB_SVC
+         value: "mongodb://todo-user-db-svc:27017"
