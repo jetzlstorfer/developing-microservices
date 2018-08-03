@@ -20,6 +20,8 @@ sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-wor
 
 ### Step 3/4: Push the image to the Container Registry
 
+Note: Google Container Registry must be enabled.
+
 ```
 sudo docker push eu.gcr.io/sai-research/hello-world:latest
 ```
