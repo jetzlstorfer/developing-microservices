@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Dominik Sachsenhofer "dominik@sachsenhofer.io"
+MAINTAINER Dominik Sachsenhofer "dominik.sachsenhofer@dynatrace.com"
 
 RUN apt-get update
 RUN apt-get install -y python-pip python-dev build-essential wget curl
