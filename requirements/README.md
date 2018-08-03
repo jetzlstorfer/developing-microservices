@@ -4,12 +4,7 @@
 
 ### Requirements:
 
-__Cloud Accounts:__
-
 - Google Cloud Platform Account
-
-__Tools:__
-
 - git
 - docker
 - gcloud
