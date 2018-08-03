@@ -2,7 +2,7 @@
 
 <br>
 
-### Step 1/4: Build the image
+### Step 2.1: Build the image
 
 ```
 sudo docker build -t sai-research/hello-world:latest .
@@ -10,7 +10,7 @@ sudo docker build -t sai-research/hello-world:latest .
 
 <br>
 
-### Step 2/4: Tag the image
+### Step 2.2: Tag the image
 
 ```
 sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-world:latest 
@@ -18,7 +18,7 @@ sudo docker tag sai-research/hello-world:latest eu.gcr.io/sai-research/hello-wor
 
 <br>
 
-### Step 3/4: Push the image to the Container Registry
+### Step 2.3: Push the image to the Container Registry
 
 Note: Google Container Registry must be enabled.
 
@@ -28,7 +28,7 @@ sudo docker push eu.gcr.io/sai-research/hello-world:latest
 
 <br>
 
-### Step 4/4: Pull the image from the Container Registry
+### Step 2.4: Pull the image from the Container Registry
 
 ```
 sudo docker pull eu.gcr.io/sai-research/hello-world:latest
