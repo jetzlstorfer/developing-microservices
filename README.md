@@ -1,6 +1,6 @@
 # Developing Microservices
 
-This is the home of the Dynatrace Developing Microservices workshop.
+This is the home of the Dynatrace Developing Microservices workshop. In this workshop you will learn how to develop and deploy microservices on a Kubernetes Cluster.
 
 Information: dominik.sachsenhofer@dynatrace.com
 
@@ -10,12 +10,12 @@ Information: dominik.sachsenhofer@dynatrace.com
 # Requirements
 
 Cloud Accounts:
-- Google Cloud Platform
+- Google Cloud Platform (billing enabled)
 
 Tools:
 - git
 - gcloud
-- kubectl 
+- kubectl
 - python3 (optional)
 - pip (optional)
 - node (optional)
@@ -58,16 +58,3 @@ https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/
 __Lab 6:__ Instrument a Kubernetes Cluster with Dynatrace
 
 https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab6
-
-<br>
-<br>
-
-# Usage
-
-### Download
-
-Clone repositories:
-
-```
-git clone https://github.com/dynatrace-innovationlab/developing-microservices.git
-```
