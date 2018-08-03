@@ -19,7 +19,7 @@ Configuration:
 - Node image: Ubuntu
 - Size: 3
 
-IMPORTANT: Billing must be enabled in order to use Google Kubernetes Engine.
+Note: Billing must be enabled in order to use Google Kubernetes Engine.
 
 <br>
 
