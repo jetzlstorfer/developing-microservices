@@ -51,7 +51,7 @@ CMD ["app.py"]
 ### Step 4/5: Build the Docker container
 
 ```
-sudo docker build -t sai-research/hello-world:latest .
+docker build -t sai-research/hello-world:latest .
 ```
 
 <br>
@@ -59,7 +59,7 @@ sudo docker build -t sai-research/hello-world:latest .
 ### Step 5/5: Run the Docker container
 
 ```
-sudo docker run -p 8080:8080 sai-research/hello-world:latest
+docker run -p 8080:8080 sai-research/hello-world:latest
 ```
 
 <br>
