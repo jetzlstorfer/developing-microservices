@@ -9,6 +9,12 @@ Information: dominik.sachsenhofer@dynatrace.com [@sachsenhofer](https://twitter.
 
 # Contents
 
+### __Requirements:__ 
+
+https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/requirements
+
+<br>
+
 ### __Lab 1:__ Container and containerized apps
 
 https://github.com/dynatrace-innovationlab/developing-microservices/tree/master/lab1
