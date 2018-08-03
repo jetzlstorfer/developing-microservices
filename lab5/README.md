@@ -2,7 +2,7 @@
 
 <br>
 
-### Step 1/3: Deploy all microservices
+### Step 5.1: Deploy all microservices
 
 Deploys the application to the Kubernetes cluster.
 
@@ -14,7 +14,7 @@ sh deploy.sh
 
 <br>
 
-### Step 2/3: Test
+### Step 5.2: Test
 
 Check all ressources that have been created:
 
@@ -49,7 +49,7 @@ Then go to http://35.233.69.142:8080 in your browser.
 
 <br>
 
-### Step 3/3: Delete
+### Step 5.3: Delete
 
 To delete all resources, execute the following command.
 
