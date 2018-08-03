@@ -1,7 +1,6 @@
 # Requirements
 
 <br>
-<br>
 
 ### Requirements:
 
@@ -11,7 +10,6 @@
 - gcloud
 - kubectl
 
-<br>
 <br>
 
 ### Step 1: Create a Google Cloud Platform Account:
