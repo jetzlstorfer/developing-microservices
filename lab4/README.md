@@ -23,23 +23,7 @@ Note: Billing must be enabled in order to use Google Kubernetes Engine.
 
 <br>
 
-### Step 3/8: Prepare gcloud
-
-Execute in terminal:
-
-```
-gcloud auth
-```
-
-Execute in terminal:
-
-```
-gcloud init
-```
-
-<br>
-
-### Step 4/8: Connect to cluster
+### Step 3/8: Connect to cluster
 
 Set environment variables:
 
@@ -57,7 +41,7 @@ gcloud container clusters get-credentials ${CLUSTER_NAME} --zone ${CLUSTER_ZONE}
 
 <br>
 
-### Step 5/8: Verify cluster connection
+### Step 4/8: Verify cluster connection
 
 Execute in terminal:
 
@@ -74,7 +58,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
 <br>
 
-### Step 6/8: Create a cluster-admin-binding
+### Step 5/8: Create a cluster-admin-binding
 
 Get current google identity:
 
@@ -97,7 +81,7 @@ kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=
 
 <br>
 
-### Step 7/8: Get resources
+### Step 6/8: Get resources
 
 Execute in terminal:
 
@@ -107,7 +91,7 @@ kubectl get deployments,pods,services --all-namespaces
 
 <br>
 
-### Step 8/8: Run container/images
+### Step 7/8: Run container/images
 
 Execute in terminal:
 
