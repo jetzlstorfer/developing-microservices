@@ -1,5 +1,7 @@
 # Lab 6: Instrument a Kubernetes Cluster with Dynatrace
 
+In this lab you will learn how to instrument a Kubernetes Cluster with Dynatrace.
+
 <br>
 
 ### Step 6.1: Create Dynatrace Tenant 
