@@ -1,5 +1,6 @@
-# Lab 5: Deploy a microservice application on a Kubernetes Cluster
+# Lab 5: Deploy a microservices application on a Kubernetes Cluster
 
+In this lab you will learn how to deploy a microservices application on a Kubernetes Cluster.
 <br>
 
 ### Step 5.1: Deploy all microservices
