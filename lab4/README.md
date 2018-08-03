@@ -4,7 +4,7 @@ In this lab you will learn how to setup a Kubernetes Cluster.
 
 <br>
 
-### Step 1: Create a project
+### Step 4.1: Create a project
 
 https://console.cloud.google.com
 
@@ -12,7 +12,7 @@ Create a Google Cloud project.
 
 <br>
 
-### Step 2: Create a Cluster on Google Kubernetes Engine (GKE)
+### Step 4.2: Create a Cluster on Google Kubernetes Engine (GKE)
 
 https://console.cloud.google.com/kubernetes
 
@@ -27,7 +27,7 @@ Note: Billing must be enabled in order to use Google Kubernetes Engine.
 
 <br>
 
-### Step 3: Connect to cluster
+### Step 4.3: Connect to cluster
 
 Set environment variables:
 
@@ -45,7 +45,7 @@ gcloud container clusters get-credentials ${CLUSTER_NAME} --zone ${CLUSTER_ZONE}
 
 <br>
 
-### Step 4: Verify cluster connection
+### Step 4.4: Verify cluster connection
 
 Execute in terminal:
 
@@ -62,7 +62,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
 <br>
 
-### Step 5: Create a cluster-admin-binding
+### Step 4.5: Create a cluster-admin-binding
 
 Get current google identity:
 
@@ -85,7 +85,7 @@ kubectl create clusterrolebinding dynatrace-cluster-admin-binding --clusterrole=
 
 <br>
 
-### Step 6: Get resources
+### Step 4.6: Get resources
 
 Execute in terminal:
 
@@ -95,7 +95,7 @@ kubectl get deployments,pods,services --all-namespaces
 
 <br>
 
-### Step 7: Run container/images
+### Step 4.7: Run container/images
 
 Execute in terminal:
 
