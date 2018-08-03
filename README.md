@@ -2,7 +2,7 @@
 
 This is the home of the Dynatrace Developing Microservices workshop. In this workshop you will learn how to develop and deploy microservices on a Kubernetes Cluster.
 
-Information: dominik.sachsenhofer@dynatrace.com
+Information: dominik.sachsenhofer@dynatrace.com [@sachsenhofer](https://twitter.com/sachsenhofer)
 
 <br>
 <br>
