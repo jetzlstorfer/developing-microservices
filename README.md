@@ -10,7 +10,7 @@ Information: dominik.sachsenhofer@dynatrace.com [@sachsenhofer](https://twitter.
 # Requirements
 
 Cloud Accounts:
-- Google Cloud Platform
+- Google Cloud Platform (GCP) with root permissions
 
 Tools:
 - git
