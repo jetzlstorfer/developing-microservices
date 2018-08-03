@@ -4,7 +4,7 @@ In this lab you will learn how to use container and build containerized apps.
 
 <br>
 
-### Step 1: Create a Python Web application
+### Step 1.1: Create a Python Web application
 
 File: directory/app.py
 
@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
 <br>
 
-### Step 2: Create a requirements.txt
+### Step 1.2: Create a requirements.txt
 
 File: directory/requirements.txt
 
@@ -32,7 +32,7 @@ flask==0.10.1
 
 <br>
 
-### Step 3: Create a Dockerfile
+### Step 1.3: Create a Dockerfile
 
 File: directory/Dockerfile
 
@@ -50,7 +50,7 @@ CMD ["app.py"]
 
 <br>
 
-### Step 4: Build the Docker container
+### Step 1.4: Build the Docker container
 
 ```
 docker build -t sai-research/hello-world:latest .
@@ -58,7 +58,7 @@ docker build -t sai-research/hello-world:latest .
 
 <br>
 
-### Step 5: Run the Docker container
+### Step 1.5: Run the Docker container
 
 ```
 docker run -p 8080:8080 sai-research/hello-world:latest
