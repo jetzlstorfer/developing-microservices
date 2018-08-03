@@ -10,7 +10,7 @@ Information: dominik.sachsenhofer@dynatrace.com
 # Requirements
 
 Cloud Accounts:
-- Google Cloud Platform (billing enabled)
+- Google Cloud Platform
 
 Tools:
 - git
