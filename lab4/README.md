@@ -1,5 +1,9 @@
 # Lab 4: Create a Kubernetes Cluster
 
+In this lab you will learn how to setup a Kubernetes Cluster.
+
+<br>
+
 ### Step 1: Create a project
 
 https://console.cloud.google.com
