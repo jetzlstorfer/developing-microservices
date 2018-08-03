@@ -44,7 +44,7 @@ Reference: https://www.docker.com
 Verify installation:
 
 ```
-$ sudo docker --version
+$ docker --version
 Docker version 18.03.1-ce, build 9ee9f40
 ```
 
@@ -59,7 +59,7 @@ Reference: https://cloud.google.com/sdk/gcloud/
 Then execute in terminal:
 
 ```
-sudo gcloud components update
+gcloud components update
 ```
 
 <br>
@@ -69,22 +69,12 @@ sudo gcloud components update
 Execute in terminal:
 
 ```
-sudo gcloud components install kubectl
+gcloud components install kubectl
 ```
 
 <br>
 
-### Step 6: Clone repository:
-
-Execute in terminal:
-
-```
-git clone https://github.com/dynatrace-innovationlab/developing-microservices.git
-```
-
-<br>
-
-### Step 7: Prepare gcloud:
+### Step 6: Prepare gcloud:
 
 Execute in terminal:
 
@@ -106,7 +96,7 @@ gcloud auth configure-docker
 
 <br>
 
-### Step 8: Clone repository:
+### Step 7: Clone repository:
 
 Execute in terminal:
 
