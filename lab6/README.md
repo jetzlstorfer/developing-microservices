@@ -27,8 +27,8 @@ kubectl create -f https://raw.githubusercontent.com/Dynatrace/dynatrace-oneagent
 Execute in terminal:
 
 ```
-export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
-export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
+export DYNATRACE_API_TOKEN=your-api-token
+export PLATFORM_AS_A_SERVICE_TOKEN=your-paas-token
 
 kubectl -n dynatrace create secret generic oneagent --from-literal="apiToken=${DYNATRACE_API_TOKEN}" --from-literal="paasToken=${PLATFORM_AS_A_SERVICE_TOKEN}"
 ```
