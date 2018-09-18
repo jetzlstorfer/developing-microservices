@@ -6,18 +6,7 @@ In this lab you will learn how to instrument a Kubernetes Cluster with Dynatrace
 
 ### Step 6.1: Create Dynatrace Tenant 
 
-Type: Sprint Tenant
-
-Url: https://qji38429.sprint.dynatracelabs.com
-
-User: developing-microservices@dynatracelabs.com
-
-Password: developing-microservices@dynatracelabs.com+A0
-
-```
-export DYNATRACE_API_TOKEN=VuoJt69iRZy8g18C3UCJc
-export PLATFORM_AS_A_SERVICE_TOKEN=ueqY7BWbQv-wV5c_lb9Zv
-```
+Bring your own license - get it here: [Dynatrace Free Trial](https://www.dynatrace.com/trial/)
 
 <br>
 
